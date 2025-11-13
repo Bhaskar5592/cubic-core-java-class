@@ -1,7 +1,7 @@
 package Assignment;
 import java.util.Scanner;
 
-public class Weekday {
+public class WeekdayQ20 {
     static void displayWeekday(int n)
     {
        switch(n) {
@@ -26,13 +26,15 @@ public class Weekday {
                                case 7:
                                    System.out.println("Sunday");
                                    break;
-                                   
+                                   default:
+                                       System.out.println("Invalid day number");
+
        }
 
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number to find which day:");
+        System.out.println("Enter a number to find which day:");
         int n = sc.nextInt();
         displayWeekday(n);
     }
